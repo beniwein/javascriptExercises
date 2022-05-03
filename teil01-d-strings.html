@@ -10,13 +10,25 @@
 function drEvil(amount) {
   if (amount == 1000000) {
     return amount + " dollars (pinky)";
-    console.log(amount);
   } else {
     return amount + " dollars";
-    console.log(amount);
   }
+  console.log(amount);  
 }
-alert(50000);
+drEvil(50000);
+
+/*function drEvil(num) {
+    let res = "DrEvil(" + num + "): " + num + " dollars";
+    if (num === 1000000) {
+        res += " (pinky)";
+    }
+    console.log(res);
+}
+
+drEvil(10);
+drEvil(1000000);*/
+
+
 
 </script>
 </head>
