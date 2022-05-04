@@ -13,7 +13,7 @@ Part2:
 ----------
 - a) If-Else: https://www.teaching-materials.org/javascript/exercises/ifelse  
 - b) For-Loops: https://www.teaching-materials.org/javascript/exercises/forloops  
-- c)Arrays with For-Loop: https://www.teaching-materials.org/javascript/exercises/arrays 
+- c) Arrays with For-Loop: https://www.teaching-materials.org/javascript/exercises/arrays 
 - d) All of the above combined: https://www.teaching-materials.org/javascript/exercises/wordguesser 
 
 Part3:
