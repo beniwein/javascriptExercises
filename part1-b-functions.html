@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teil 01 - Funktionen</title>
+    <script>
+// Exercise 1 of 5:
+        function tellFortune(jobTitle, home, wife, numKids) {
+            const future = 'You will be a ' + jobTitle + ' in ' + home + ' and married to ' + wife + ' ' + ' with ' + numKids + ' kids.';
+            // alert(future);
+        }
+
+        // tellFortune('Traveller', 'Spain', 'Miss X', 0);
+        // tellFortune('Coder', 'South Italy', 'Miss Y', 2);
+        // tellFortune('Pensioner', 'Monaco', 'Miss Z', 3);
+
+// Exercise 2 of 5:
+        function calculateDogAge(age) {
+            const dogAge = age * 7;
+            // alert('Your doggie is ' + dogAge + ' years old in dog years.');
+        }
+
+        // calculateDogAge(2);
+        // calculateDogAge(4);
+        // calculateDogAge(6);
+
+// Exercise 3 of 5:
+        function calculateSupply(age, annualAmount) {
+            const maxAge = 99;
+            const totalEat = (annualAmount * 365) * (maxAge - age);
+            const message = 'You will need ' + totalEat + ' to last you until the ripe old age of ' + maxAge;
+            // console.log(message);
+        }
+
+        // calculateSupply(39, 120);
+        // calculateSupply(39, 180);
+        // calculateSupply(39, 36);
+
+// Exercise 4 of 5:
+        function calcGeometry(radius) {
+            const circumference = Math.PI * 2 * radius;       // Math.PI according given Solution
+            // console.log("The circumference is " + circumference);
+            const area = Math.PI * radius * radius;
+            // console.log("The area is " + area);
+        }
+
+// Exercise 5 of 5:        
+        function celsiusToFahrenheit(celsius) {
+            const celsiusInF = (celsius * 9) / 5 + 32;
+            // console.log(celsius + '°C is ' + celsiusInF + '°F');
+        }
+
+        function fahrenheitToCelsius(fahrenheit) {
+            const fahrenheitInC = ((fahrenheit - 32) * 5) / 9;
+            // console.log(fahrenheit + '°F is ' + fahrenheitInC + '°C');
+        }
+
+    </script>
+</head>
+
+<body>
+    <h3>1. The Fortune Teller</h3>
+    <p>Why pay a fortune teller when you can just program your fortune yourself?<br>
+        - Write a function named tellFortune that:<br>
+        -- takes 4 arguments: number of children, partner's name, geographic location, job title.<br>
+        -- outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."<br>
+        - Call that function 3 times with 3 different values for the arguments.</p>
+    <hr>
+    <h3>2. The Puppy Age Calculator</h3>
+    <p>You know how old your dog is in human years, but what about dog years? Calculate it!<br>
+        - Write a function named calculateDogAge that:<br>
+        -- takes 1 argument: your puppy's age.<br>
+        -- calculates your dog's age based on the conversion rate of 1 human year to 7 dog years.<br>
+        -- outputs the result to the screen like so: "Your doggie is NN years old in dog years!"<br>
+        - Call the function three times with different sets of values.<br>
+        - <b>Bonus:</b> Add an additional argument to the function that takes the conversion rate of human to dog years.
+    </p>
+    <hr>
+    <h3>3. The Lifetime Supply Calculator</h3>
+    <p>Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!<br>
+        - Write a function named calculateSupply that:<br>
+        -- takes 2 arguments: age, amount per day.<br>
+        -- calculates the amount consumed for rest of the life (based on a constant max age).<br>
+        -- outputs the result to the screen like so: "You will need NN to last you until the ripe old age of X"<br>
+        - Call that function three times, passing in different values each time.<br>
+        - <b>Bonus:</b> Accept floating point values for amount per day, and round the result to a round number.</p>
+    <hr>
+    <h3>4. The Geometrizer</h3>
+    <p>Create 2 functions that calculate properties of a circle, using the definitions here.<br>
+        Create a function called calcCircumfrence:<br>
+        - Pass the radius to the function.<br>
+        - Calculate the circumference based on the radius, and output "The circumference is NN".<br>
+        Create a function called calcArea:<br>
+        - Pass the radius to the function.<br>
+        - Calculate the area based on the radius, and output "The area is NN".</p>
+    <hr>
+    <h3>5. The Temperature Converter</h3>
+    <p>It's hot out! Let's make a converter based on the steps here.<br>
+        Create a function called celsiusToFahrenheit:<br>
+        - Store a celsius temperature into a variable.<br>
+        - Convert it to fahrenheit and output "NN°C is NN°F".<br>
+        Create a function called fahrenheitToCelsius:<br>
+        - Now store a fahrenheit temperature into a variable.<br>
+        - Convert it to celsius and output "NN°F is NN°C."</p>
+    <hr>
+
+</body>
+
+</html>

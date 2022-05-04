@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teil 02 - for Loop</title>
+    <script>
+// Exercise 1 of 3:    
+        for (let i = 0; i <= 20; i++) {
+            if (i % 2 === 0) {
+                console.log(i + " is even");
+            } else {
+                console.log(i + " is odd");
+            }
+        }
+
+// Exercise 2 of 3:
+        let multiplier = 9;
+        for (let i = 0; i <= 10; i++) {
+            let result = multiplier * i;
+            console.log(multiplier + ' * ' + i + ' = ' + result);
+        }
+
+
+        for (let multiplier = 0; multiplier <= 10; multiplier++) {
+        for (let i = 0; i <= 10; i++) {
+        let result = multiplier * i;
+        console.log(multiplier + ' * ' + i + ' = ' + result);
+        }
+        }
+
+// Exercise 3 of 3:
+        function assignGrade(score) {
+            if (score > 90) {
+                return 'A';
+            } else if (score > 80) {
+                return 'B';
+            } else if (score > 70) {
+                return 'C';
+            } else if (score > 65) {
+                return 'D';
+            } else {
+                return 'F';
+            }
+        }
+
+        for (var i = 60; i <= 100; i++) {
+        console.log('For ' + i + ', you got: ' + assignGrade(i));
+        }
+    </script>
+</head>
+
+<body>
+    <h3>1. The even/odd reporter</h3>
+    <p>- Write a for loop that will iterate from 0 to 20. For each iteration, it will check if the current number is
+        even or odd, and report that to the screen (e.g. "2 is even").</p>
+    <hr>
+    <h3>2. Multiplication Tables</h3>
+    <p>- Write a for loop that will iterate from 0 to 10. For each iteration of the for loop, it will multiply the
+        number by 9 and log the result (e.g. "2 * 9 = 18").<br>
+        <b>Bonus:</b> Use a nested for loop to show the tables for every multiplier from 1 to 10 (100 results total).
+    </p>
+    <hr>
+    <h3>3. The Grade Assigner</h3>
+    <p>- Check the results of your assignGrade function from the conditionals exercise by logging every value from 60 to
+        100: your log should show "For 88, you got a B. For 89, you got a B. For 90, you got an A. For 91, you got an
+        A.", etc., logging each grade point in the range.</p>
+    <hr>
+
+
+</body>
+
+</html>
