@@ -8,7 +8,27 @@
     <title>Teil 03 - Parameter</title>
     <script>
 
+function cashRegister(cart){
+  let items = Object.keys(cart); 
+  let sum = 0; 
+  
+  for (let i = 0; i < items.length; i++) {
+    let itemName = items[i]; 
+    let itemPrice = cart[itemName];
+    sum += Number.parseFloat(itemPrice);
+  }
 
+  return sum;
+}
+
+let cartMe = {  
+    apple: "0.75",
+    soda: "1.15",
+    crackers: "1.01",
+  };
+  
+  // Output
+console.log(cashRegister(cartMe)); 
 
     </script>
 </head>

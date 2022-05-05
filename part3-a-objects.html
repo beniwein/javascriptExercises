@@ -21,7 +21,25 @@ for (let i = 0; i < recipe.ingredients.length; i++) {
     console.log(recipe.ingredients[i]);
 }
 // Exercise 2 of 2: 
+let books = [
+  {title: 'The Green Mile',
+   author: 'Stephen King',
+   alreadyRead: true
+  },
+  {title: 'Faust',
+  author: 'Johann Wolfgang von Goethe',
+  alreadyRead: false
+  }];
 
+for (let i = 0; i < books.length; i++) {
+  let book = books[i];
+  let bookInfo = book.title + '" by ' + book.author;
+  if (book.alreadyRead) {
+    console.log('You already read "' + bookInfo);
+  } else {
+    console.log('You still need to read "' + bookInfo);
+  }
+}
 
     </script>
 </head>
