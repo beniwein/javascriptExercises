@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample - Arrow Function</title>
+    <script>
+// arrow method:
+let population = [
+    {city: 'Los Angeles', citizens: 3792621},
+    {city: 'New York', citizens: 8175133},
+    {city: 'Chicago', citizens: 2695598},
+    {city: 'Houston', citizens: 2099451},
+    {city: 'Philadelphia', citizens: 1526006}
+]
+
+let result = population.filter(name => name.citizens < 3000000);
+
+console.log(result);
+
+    </script>
+</head>
+
+<body>
+    <h3>Exercise with Arrow Function and Array.filter()</h3>
+    <p>Point out all cities with less than 3 Mio citizens.<br>
+        - List of big cities with name & population:<br>
+        -- Los Angeles: 3792621<br>
+        -- New York: 8175133<br>
+        -- Chicago: 2695598<br>
+        -- Houston: 2099451<br>
+        -- Philadelphia: 1526006</p>
+    <hr>
+
+    <p id="result"></p>
+    
+
+</body>
+
+</html>
